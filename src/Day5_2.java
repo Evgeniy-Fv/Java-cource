@@ -1,6 +1,6 @@
 //
 public class Day5_2 {
-  public static void main(String[] args){
+  public static void main (String[] args){
     Motorbike mtb = new Motorbike("Honda", "Silver", 2021);
     System.out.println(mtb.getMod());
     System.out.println(mtb.getCol());
