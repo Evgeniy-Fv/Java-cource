@@ -1,3 +1,4 @@
+//
 public class Day5_2 {
   public static void main(String[] args){
     Motorbike mtb = new Motorbike("Honda", "Silver", 2021);
