@@ -14,14 +14,17 @@ public class Day4_2 {
 
     class Array{
         private int[] array;
-        private int kk;
+        private int k;
     public void setArray(int k, int ch) {
-        kk = k;
+        //kk = k;
+       this.k = k;
         array = new int[k];
         Random rand = new Random();
         for (int i = 0; i < k; i++) {
             array[i] = rand.nextInt(ch);
-        }}
+        }
+
+    }
 
     public void dispArray() {
             System.out.println(Arrays.toString(array));
@@ -31,7 +34,7 @@ public class Day4_2 {
             int max = 0;
 
             max = array[0];
-            for (int i = 0; i < kk; i++) {
+            for (int i = 0; i < k; i++) {
 
                 if (max < array[i]) {
                     max = array[i];
@@ -46,7 +49,7 @@ public class Day4_2 {
             int min = 0;
 
             min = array[0];
-            for (int i = 0; i < kk; i++) {
+            for (int i = 0; i < k; i++) {
 
                 if (min > array[i]) {
                     min = array[i];
@@ -57,7 +60,7 @@ public class Day4_2 {
         }
         public void zero(){
         int count=0;
-        for(int i=0;i<kk;i++){
+        for(int i=0;i<k;i++){
             if(array[i]%10==0)
                 count++;
         }
@@ -65,7 +68,7 @@ public class Day4_2 {
         }
         public void summZero(){
             int sum=0;
-            for(int i=0;i<kk;i++){
+            for(int i=0;i<k;i++){
                 if(array[i]%10==0)
                  sum = sum+array[i];
             }
