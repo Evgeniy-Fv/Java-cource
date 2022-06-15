@@ -1,4 +1,4 @@
-package Day7;
+package Day8;
 
 public class Airplane {
     private String manufacturer;
@@ -28,9 +28,6 @@ public class Airplane {
     public void setFuel(int fuel){
         this.fuel = fuel;
     }
-
-    public int getLength(){ return  length;}
-
     public int getFuel(){
 
         return fuel;
@@ -38,17 +35,14 @@ public class Airplane {
 
 void info(){
 System.out.println("Изготовитель: "+manufacturer+", год выпуска:"+year+", длина:"+length+", вес:"+weight+", топливо в баке:"+fuel);
-}
 
+}
 void fillUp(int fuel){
 this.fuel = fuel+this.fuel;
 }
 
-public static void compareAirplanes(Airplane pl1, Airplane pl2){
-if(pl1.getLength()> pl2.getLength())
-    System.out.println("Самолёт "+pl1.manufacturer+" длинее, чем самолет "+pl2.manufacturer);
-else if (pl1.getLength()< pl2.getLength())
-    System.out.println("Самолёт "+pl2.manufacturer+" длинее, чем самолет "+pl1.manufacturer);
-else System.out.println("Длины самолетов равны.");
+public String toString(){
+
+        return "Изготовитель: "+manufacturer+", год выпуска:"+year+", длина:"+length+", вес:"+weight+", топливо в баке:"+fuel;
 }
 }
